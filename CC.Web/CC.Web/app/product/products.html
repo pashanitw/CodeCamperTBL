@@ -1,0 +1,26 @@
+﻿<section class="mainbar" data-ng-controller="products as vm">>
+    <section class="matter">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="widget worange">
+                    <div data-cc-widget-header title="{{vm.title}}"
+                        subtitle="{{vm.products.length}}"></div>
+                    <div class="widget-content user">
+                        <div class="padd" data-ng-repeat="p in vm.products">
+                            <div class="user">
+                             <div class="user-details">
+                                   <h3>{{p.Name}}</h3>
+                                    <h6>{{p.SKU}}</h6>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
